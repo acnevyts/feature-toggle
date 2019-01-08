@@ -15,11 +15,11 @@ export interface FeatureFlagConfiguration {
 
 export class FeatureToggle {
     private config: FeatureFlagConfiguration
-    constructor(config: FeatureFlagConfiguration){
-        this.config = config;
+    constructor(config?: FeatureFlagConfiguration){
+        if (config) this.setConfig(config);
     }
 
-    public setConfig(config?: FeatureFlagConfiguration){
+    public setConfig(config: FeatureFlagConfiguration){
         this.config = config;
     }
 

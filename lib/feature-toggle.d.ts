@@ -14,8 +14,8 @@ export interface FeatureFlagConfiguration {
 }
 export declare class FeatureToggle {
     private config;
-    constructor(config: FeatureFlagConfiguration);
-    setConfig(config?: FeatureFlagConfiguration): void;
+    constructor(config?: FeatureFlagConfiguration);
+    setConfig(config: FeatureFlagConfiguration): void;
     isEnabled(featureName: string): boolean;
     execFeature(featureName: string, enabledFunction: Function, disabledFunction: Function): any;
     getWarningFeatures(): string[];
