@@ -19,6 +19,10 @@ export class FeatureToggle {
         this.config = config;
     }
 
+    public setConfig(config?: FeatureFlagConfiguration){
+        this.config = config;
+    }
+
     public isEnabled(featureName: string): boolean {
         let enabled: boolean = false;
         if(featureName){
