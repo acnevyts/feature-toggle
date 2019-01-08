@@ -1,0 +1,1 @@
+exports.FeatureToggle = require('./lib/feature-toggle').FeatureToggle;
